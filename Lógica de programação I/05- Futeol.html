@@ -10,53 +10,35 @@
 
 <body>
 
-    <h1>Calculo de IMC</h1>
-
-
+    <h1>Calculo de Vitorias: </h1>
 
     <script>
 
         function pulaLinha() {
-
             document.write("<br>");
             document.write("<br>");
-
         }
 
 
         function mostra(frase) {
-
             document.write(frase);
             pulaLinha();
         }
 
+        var vitorias = parseInt(prompt("Entre com um numero de Vitorias: "))
+        var empates = parseInt(prompt("Entre com um numero de empates: "))
 
-        function calculaImc(altura, peso,) {
+        var pontos = vitorias * 3 + empates;
 
-            return peso / (altura * altura)
+        document.write(pontos);
 
-        }
-
-
-        var nome = prompt("informe seu Nome !")
-        var alturaInformada = prompt(nome + ", informe sua Altura")
-        var pesoInformado = prompt(nome + ", informe sua Peso")
-
-        var imc = calculaImc(alturaInformada, pesoInformado)
-
-        document.write(nome  ", seu Imc calculado e " + imc)
-
-
-
-
-
+    
 
 
 
 
 
     </script>
-
 
 </body>
 
