@@ -15,26 +15,28 @@
     <script>
 
         function pulaLinha() {
-            document.write("<br> <br> ")
-
+            document.write("<br>");
+            document.write("<br>");
         }
 
-
-        function mostra(texto) {
-            document.write(texto)
+        function mostra(frase) {
+            document.write(frase);
             pulaLinha();
         }
 
 
-        var totalFamiliares = parseInt(prompt("Quantidade de familiares?"));
+        for (var linha = 1; linha <= 10; linha++) {
 
-        var numero = 1;
-        while (numero <= totalFamiliares) {
-            var idade = parseInt(prompt("Informe idade do familiar"));
-            numero++;
+            for (var coluna = 1; coluna <= 10; coluna++) {
+                document.write("*");
+            }
+            pulaLinha();
         }
 
-        mostra("A media da familia " + totalFamiliares);
+
+
+
+
 
 
 
